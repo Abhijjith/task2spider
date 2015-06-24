@@ -42,3 +42,40 @@ Our GA_Service::report accepts four arguments: a view ID, a start and end date a
 
 By using various segments and filters , we accept the data and the parameters from the user.
 
+I made  the graphs and charts by making use of [Highcharts](www.highcharts.com)
+
+For the date range selection , i used the [bootstrap-daterangepicker](https://github.com/dangrossman/bootstrap-daterangepicker) and correspondingly we include the css and the js files. In views/home.blade.php , it delas with the above information.
+
+I created a new file called GA_utils in our app/src folder. This is we’re i hav put miscellaneous functions.
+
+First, we include the highchart.js file, then we use some configuration from their documentation.
+Inside our controller, we created an array of values, and then we encoded those values to be used in our JS.
+
+The list of server routes that im using are
+Route::get('/', 'HomeController@index');        //essentially the home page.
+
+Route::get('/login', 'HomeController@login');     // management
+
+Route::get('/segments', 'HomeController@segments');
+
+Route::get('/accounts', 'HomeController@accounts');
+
+Route::get('/properties/{account_id}', ['uses' => 'HomeController@properties'])->where('account_id', '\d+');
+
+Route::get('/views/{account_id}/{property_id}', ['uses' => 'HomeController@views'])->where([
+                                                                                               'account_id',
+                                                                                               '\d+',
+                                                                                               'property_id',
+                                                                                               '\d+'
+                                                                                           ]);
+Route::get('/metadata', 'HomeController@metadata');   //metadata
+
+Route::post('/report', 'HomeController@report');    //reporting.
+
+The documenation of this API can be referred here. [link](developers.google.com/analytics/devguides/reporting/core/v3/coreDevguide)
+
+The documentation of laravel 5 can be referred here. [link](http://laravel.com/docs/master)
+
+
+
+
