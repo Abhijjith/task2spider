@@ -18,7 +18,7 @@ When you want to use a Google API you need to provide two things:
 1) Your API credentials.  2) Your developer keys.
 We need to enable the Analtyics API from the Google developers console. and create a new client ID. The above two mentioned will be available now.
 
-Next we need to set up a Laravel project.
+Next we need to set up a Laravel project .
 We need to require "google/api-client": "dev-master" in our composer.json and update the dependencies.
 
 In my config folder, i created a new file called analtyics.php where i did all my configuration. it essentially includes the client id and other details regarding the client.
