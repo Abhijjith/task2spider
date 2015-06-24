@@ -76,5 +76,9 @@ The documenation of this API can be referred here. [link](developers.google.com/
 
 The documentation of laravel 5 can be referred here. [link](http://laravel.com/docs/master)
 
-![alt tag](http://i.imgur.com/qejgnAf.png)
+I hav included some screenshots.
+
+![alt tag](http://i.imgur.com/cIJC6s2.png)
+
+![alt tag](http://i.imgur.com/5UGHS2J.png).
 
