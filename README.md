@@ -80,5 +80,7 @@ I hav included some screenshots.
 
 ![alt tag](http://i.imgur.com/cIJC6s2.png)
 
-![alt tag](http://i.imgur.com/5UGHS2J.png).
+![alt tag](http://i.imgur.com/5UGHS2J.png)
+
+
 
